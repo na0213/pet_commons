@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Commons - ぺっとの飼い主が集うコミュニティ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="mobile-container">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Pet Commons" class="logo-img">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#lineup">Topics</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#voice">Voices</a></li>
+                    <li><a href="#stay">How To Use</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/bg.png" alt="コミュニティの背景" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-top">
+                <img src="images/top.png" alt="Pet Commons" class="hero-top-img">
+            </div>
+            <div class="hero-copy">
+                <h1 class="hero-title">
+                ぺっとの飼い主が集う、<br>
+                知恵とつながりのコミュニティ
+                </h1>
+                <p class="hero-subtitle">
+                「獣医師に聞くほどではないけれど…」<br>
+                そんな“ちょっと聞きたい”がここで解決。<br>
+                種類・年齢・テーマ別に、体験談や工夫を探せます。
+                </p>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="cta-button">
+                    <span class="cta-text">無料で参加する</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Pet Commons</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="about-image">
+                        <img src="images/dog.png" alt="種類・年齢・テーマで探す" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            SNSや知恵袋に散らばる情報をひとつに。<br>
+                            <strong>ペットの種類・年齢・テーマ</strong>で一発検索。<br>
+                            似た状況の飼い主の実例がすぐ見つかります。
+                        </p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-image">
+                        <img src="images/bird.png" alt="ちょっと聞きたいを気軽に" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            「獣医師に聞くほどでは…」という日常の疑問。<br>
+                            <strong>ちょっと聞ける・すぐ返ってくる</strong>安心感。<br>
+                            介護や老後の工夫、暮らしの知恵も共有できます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-closing">
+                <p>
+                    飼い主どうしで学び合い、助け合う。<br>
+                    情報の迷子にならない、あなたの居場所。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section (旧 Lineup) -->
+    <section id="lineup" class="lineup">
+        <div class="container">
+            <h2 class="section-title">Topics</h2>
+            <p class="lineup-description">
+                種類・年齢・テーマでしぼり込み。<br>
+                しつけから健康、介護やおでかけのコツまで、実例ベースで探せます。
+            </p>
+            
+            <div class="lineup-grid">
+                <!-- Topic Card examples -->
+                <div class="lineup-card">
+                    <div class="card-badge sale">人気</div>
+                    <div class="card-image">
+                        <img src="images/lineup1.png" alt="子犬のしつけ 0-1歳" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">子犬のしつけ / 0-1歳</h3>
+                        <p class="card-location">子犬 / 共通</p>
+                        <p class="card-price">投稿数 1,200+</p>
+                        <p class="card-note">トイレ・噛み・お留守番のコツを実例で</p>
+                    </div>
+                </div>
+
+                <div class="lineup-card">
+                    <div class="card-badge sale">新着</div>
+                    <div class="card-image">
+                        <img src="images/lineup2.png" alt="老犬ケア・介護" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">老犬ケア・介護</h3>
+                        <p class="card-location">犬 / 7歳以上</p>
+                        <p class="card-price">投稿数 980+</p>
+                        <p class="card-note">食事・見守り・夜鳴き対策の工夫集</p>
+                    </div>
+                </div>
+
+                <div class="lineup-card">
+                    <div class="card-badge sale">特集</div>
+                    <div class="card-image">
+                        <img src="images/lineup3.png" alt="旅行・移動の知恵" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">旅行・移動の知恵</h3>
+                        <p class="card-location">全種 / 共通</p>
+                        <p class="card-price">投稿数 430+</p>
+                        <p class="card-note">車・電車・ケージ練習と持ち物</p>
+                    </div>
+                </div>
+
+                <div class="lineup-card">
+                    <div class="card-badge sale">注目</div>
+                    <div class="card-image">
+                        <img src="images/lineup4.png" alt="災害・防災対策" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">災害・防災対策</h3>
+                        <p class="card-location">全種 / 共通</p>
+                        <p class="card-price">投稿数 220+</p>
+                        <p class="card-note">備蓄・避難・識別情報の整え方</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-intro">
+                <p>
+                    情報が散らばらないように、コミュニティ内で整理・検索できる仕組みを用意しました。
+                </p>
+                <p>
+                    種類・年齢・テーマの組み合わせで高速検索。実例の蓄積とあわせて、関連する商品の紹介やレビューも見られます。
+                </p>
+            </div>
+            
+            <div class="features-content">
+                <div class="features-main">
+                    <div class="features-image">
+                        <img src="images/ferret.png" alt="検索と実例のイメージ" loading="lazy">
+                    </div>
+                    <div class="features-text">
+                        <h3>探す→見つかる→試せる</h3>
+                        <h3 class="highlight">種類・年齢・テーマで<br>迷わずたどり着く</h3>
+                        <p>
+                            タグ検索で似た状況の投稿をすぐ表示。<br>
+                            ベストアンサーや“役に立った”の多い投稿が上位に。
+                            気になったトピックはフォローして更新を受け取れます。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <img src="images/qa.png" alt="Q&Aと実例" loading="lazy">
+                        <p>Q&Aと実例がすぐ読める</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voices Section -->
+    <section id="voice" class="voice">
+    <div class="container">
+        <h2 class="section-title">Voices</h2>
+        <p class="voice-subtitle">コミュニティメンバーの声</p>
+    </div>
+
+  <!-- 横スライダー -->
+  <div class="voice-carousel" id="voiceCarousel">
+    <button class="voice-arrow prev" aria-label="前へ">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="voice-track" id="voiceTrack" tabindex="0">
+      <!-- 1枚目 -->
+      <article class="voice-card">
+        <figure class="voice-photo">
+          <img src="images/owner1.png" alt="わんちゃんと暮らすメンバーの写真">
+        </figure>
+        <div class="voice-body">
+          <div class="voice-dots" aria-hidden="true"><span></span><span class="on"></span><span></span></div>
+          <p class="voice-text">
+            ちょっとした疑問でも気軽に質問でき、似た月齢の体験談がすぐ見つかります。
+            情報が散らばらず、必要な答えにすぐ届くのがありがたいです。
+          </p>
+          <span class="voice-author">（犬オーナー / 30代）</span>
+        </div>
+      </article>
+
+      <!-- 2枚目 -->
+      <article class="voice-card">
+        <figure class="voice-photo">
+          <img src="images/owner2.png" alt="コミュニティメンバーの写真">
+        </figure>
+        <div class="voice-body">
+          <div class="voice-dots" aria-hidden="true"><span></span><span class="on"></span><span></span></div>
+          <p class="voice-text">
+            介護の工夫や商品の使い方など、リアルな知恵が集まっているのが心強い。
+            ベストアンサーが見やすく、安心して試せます。
+          </p>
+          <span class="voice-author">（猫オーナー / 40代）</span>
+        </div>
+      </article>
+
+      <!-- 3枚目（例） -->
+      <article class="voice-card">
+        <figure class="voice-photo">
+          <img src="images/owner3.png" alt="コミュニティメンバーの写真">
+        </figure>
+        <div class="voice-body">
+          <div class="voice-dots" aria-hidden="true"><span></span><span class="on"></span><span></span></div>
+          <p class="voice-text">
+            種類・年齢で絞るだけで、うちと同じ状況の投稿が並ぶのが便利。いいねの多い工夫から試しています。
+          </p>
+          <span class="voice-author">（うさぎオーナー / 20代）</span>
+        </div>
+      </article>
+    </div>
+
+        <button class="voice-arrow next" aria-label="次へ">
+        <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="voice-paws" id="voicePaws">
+    <span class="paw">🐾</span>
+    <span class="paw">🐾</span>
+    <span class="paw">🐾</span>
+    </div>
+    </section>
+
+
+    <!-- How To Use Section -->
+    <section id="stay" class="stay">
+        <div class="container">
+            <h2 class="section-title">How To Use</h2>
+            <h3 class="stay-subtitle">コミュニティの使い方<br><span>3ステップでスタート</span></h3>
+            
+            <div class="stay-intro">
+                <p>
+                    プロフィールにペットの種類や年齢を登録すると、<br>
+                    ぴったりのトピックが見つかりやすくなります。
+                </p>
+            </div>
+            
+            <div class="stay-timeline">
+                <!-- Step 1 -->                
+                <div class="timeline-item">
+                    <div class="timeline-marker">STEP 1</div>
+                    <div class="timeline-content">
+                        <h4>プロフィール設定＆フォロー</h4>
+                        <h5>種類・年齢・関心テーマを登録</h5>
+                        <p>おすすめトピックが自動で表示。気になるタグをフォローするとタイムラインが最適化されます。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">STEP 2</div>
+                    <div class="timeline-content">
+                        <h4>検索して読む・保存する</h4>
+                        <h5>タグ検索＆ベストアンサー</h5>
+                        <p>似た状況の実例やベストアンサーをチェック。役に立った投稿は保存して、あとから見返せます。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">STEP 3</div>
+                    <div class="timeline-content">
+                        <h4>質問する・シェアする</h4>
+                        <h5>質問投稿＆シェア機能</h5>
+                        <p>「ちょっと困った」を気軽に質問。うまくいった工夫や商品レビューをシェアして、みんなの知恵に。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">PLUS</div>
+                    <div class="timeline-content">
+                        <h4>商品とノウハウがつながる</h4>
+                        <div class="timeline-image">
+                            <img src="images/petfood.png" alt="商品連動" loading="lazy">
+                        </div>
+                        <p>実例で評判の良いアイテムをまとめてチェック。生活に合う選び方や使い方のコツもわかります。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stay-cta">
+                <p>
+                    まずは気になるテーマをフォロー。<br>
+                    今日からコミュニティで一緒に育てていきましょう。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <a href="#contact" class="cta-button large">
+                <span class="cta-text">無料で参加する</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Pet Commons" class="footer-logo-img">
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Pet Commons. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" aria-label="閉じる">&times;</span>
+            <h3>コミュニティガイドライン</h3>
+            <p>安心して参加できる場づくりのためのお願いをまとめました。参加前にご一読ください。</p>
+            <a href="#contact" class="modal-cta">ガイドラインを読む</a>
+        </div>
+    </div>
+</div><!-- ← ここで mobile-container を閉じる -->
+
+<!-- 足跡アニメーション切り替えボタン -->
+<button id="togglePawBtn" class="paw-toggle">
+  <img src="images/logo.png" alt="paw icon" class="paw-icon">
+  <span class="paw-label">OFF</span>
+</button>
+<!-- 画面全体で歩かせるレイヤー（装飾） -->
+<div class="paw-walker" aria-hidden="true"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
