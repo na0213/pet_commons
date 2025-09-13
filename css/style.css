@@ -93,28 +93,96 @@ p {
     width: auto;
 }
 
-/* Hide navigation menu on mobile by default */
+/* サイドナビ（PC時のみ表示） */
+.side-nav {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1rem;
+  z-index: 3000; /* ← 2000 → 3000に上げる */
+  background: rgba(255,255,255,0.8); /* 背景を半透明に追加して見やすく */
+  padding: 10px 14px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px); /* おしゃれに */
+}
+.side-nav ul { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.side-nav li {
+  display: flex;           /* ← アイコンとテキストを横並びに */
+  align-items: center;     /* ← 縦位置を中央揃え */
+}
+
+.side-nav a {
+  display: flex;           /* ← aタグ内でも横並びに */
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.side-nav a:hover { 
+  color: #8b5e3c; 
+}
+
+.side-nav .paw-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;       /* ← テキストとの間隔 */
+  opacity: 0.3;            /* デフォルト薄い */
+  transition: opacity 0.3s ease;
+}
+
+.side-nav a.active .paw-icon {
+  opacity: 1;              /* 現在のメニューだけ濃く */
+}
+
+/* モバイル用ナビはデフォ非表示 */
 .nav {
-    display: none;
+  display: none;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
 }
 
-.nav-list {
-    display: flex;
+/* スマホ時に切り替え */
+@media (max-width: 768px) {
+  .side-nav { display: none; } /* サイドナビ非表示 */
+
+  .menu-toggle { display: block; margin-left: auto; }
+  .nav {
+    display: none; /* JSで切り替え */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .nav-list {
     list-style: none;
-    gap: 20px;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
     flex-direction: column;
-}
-
-.nav-list a {
+    gap: 10px;
+  }
+  .nav-list a {
+    color: #333;
     text-decoration: none;
-    color: #3a2e2b;
-    font-weight: 400;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.nav-list a:hover {
-    color: #8b5e3c;
+    font-weight: 500;
+  }
 }
 
 /* Hero Section */

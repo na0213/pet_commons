@@ -9,22 +9,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- サイドナビ（PCのみ表示） -->
+    <nav class="side-nav">
+    <ul>
+        <li><a href="#about"><img src="images/paw.png" class="paw-icon"> About</a></li>
+        <li><a href="#lineup"><img src="images/paw.png" class="paw-icon"> Topics</a></li>
+        <li><a href="#features"><img src="images/paw.png" class="paw-icon"> Features</a></li>
+        <li><a href="#voice"><img src="images/paw.png" class="paw-icon"> Voices</a></li>
+        <li><a href="#stay"><img src="images/paw.png" class="paw-icon"> How To Use</a></li>
+    </ul>
+    </nav>
     <div class="mobile-container">
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Pet Commons" class="logo-img">
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#lineup">Topics</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#voice">Voices</a></li>
-                    <li><a href="#stay">How To Use</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Pet Commons" class="logo-img">
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav" id="mobileNav">
+            <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#lineup">Topics</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#voice">Voices</a></li>
+            <li><a href="#stay">How To Use</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
 

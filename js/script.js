@@ -37,6 +37,52 @@ function initializeHeader() {
     });
 }
 
+document.getElementById("menuToggle").addEventListener("click", function() {
+  const nav = document.getElementById("mobileNav");
+  nav.style.display = (nav.style.display === "block") ? "none" : "block";
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".side-nav a");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 現在のセクションに対応するリンクを探す
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${entry.target.id}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0.3 // セクションが60%見えたらアクティブ
+  });
+
+  sections.forEach(section => observer.observe(section));
+});
+
+// スクロール制御
+document.querySelectorAll('.side-nav a, .nav-list a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // デフォルトのジャンプを止める
+    const targetId = this.getAttribute('href').slice(1); // #を除去
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // スマホ時はメニューを閉じる
+    const mobileNav = document.getElementById("mobileNav");
+    if (mobileNav && mobileNav.style.display === "block") {
+      mobileNav.style.display = "none";
+    }
+  });
+});
+
+
 // Hero section animations
 function initializeHeroAnimations() {
     const heroContent = document.querySelector('.hero-content');
@@ -426,9 +472,9 @@ console.log(`
   if (!walker) return;
 
   // --- 設定（お好みで調整） ---
-  const STEP_MS = 720;         // 一歩ごとの間隔（小さいほど速く歩く）
+  const STEP_MS = 820;         // 一歩ごとの間隔（小さいほど速く歩く）
   const SIZE_PX = 20;          // 足跡サイズ
-  const VH_PER_SEG = 22;       // セグメント1本あたりの縦移動量（vh）
+  const VH_PER_SEG = 32;       // セグメント1本あたりの縦移動量（vh）
   const LEFT_LIM = 18;         // 左端(%)
   const RIGHT_LIM = 82;        // 右端(%)
   const FOOT_OFFSET_VW = 1.8;  // 足の左右の開き（vw）
